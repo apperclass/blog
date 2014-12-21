@@ -1,0 +1,11 @@
+.apperclass-gradient{
+    background: #e1ebb5; /* Old browsers */
+    background: -moz-linear-gradient(left,  #e1ebb5 0%, #318789 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e1ebb5), color-stop(100%,#318789)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #e1ebb5 0%,#318789 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #e1ebb5 0%,#318789 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #e1ebb5 0%,#318789 100%); /* IE10+ */
+    background: linear-gradient(to right,  #e1ebb5 0%,#318789 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ebb5', endColorstr='#318789',GradientType=1 ); /* IE6-9 */
+
+}

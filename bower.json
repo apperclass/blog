@@ -1,0 +1,8 @@
+{
+    "name": "Apperclass Blog",
+    "dependencies": {
+        "foundation": "~5.4.7",
+        "isotope": "2.1.0",
+        "infinite-scroll": "2.1"
+    }
+}
