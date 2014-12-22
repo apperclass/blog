@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Enqueue Styles and Scripts
+ */
 function apperclass_theme_scripts() {
 
     // Styles
@@ -13,3 +16,12 @@ function apperclass_theme_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'apperclass_theme_scripts' );
+
+
+/**
+ * Filter Excerpt Length
+ */
+function custom_excerpt_length( $length ) {
+    return 16;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

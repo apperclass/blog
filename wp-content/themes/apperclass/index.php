@@ -6,20 +6,20 @@
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <article class="blog-article isotope-item">
-                <a href="<?php the_permalink(); ?>" class="box">
+                <div class="box">
                     <div class="wrap-picture">
-                        <img src="http://placehold.it/350x260" alt="">
+                        <a href="<?php the_permalink(); ?>"><img src="http://placehold.it/350x260" alt=""></a>
                     </div>
                     <div class="article-body">
-                        <h2>Development</h2>
-                        <h1><?php the_title(); ?></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula [...]</p>
+                        <h2><?php the_category( ', ' ); ?></h2>
+                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                        <p><?php the_excerpt(); ?></p>
                     </div>
                     <footer class="post-info">
-                        <div class="author"><span class="icon icon-user"></span> Matteo Orioli</div>
-                        <div class="date"><span class="icon icon-clock"></span> December 27, 2014</div>
+                        <div class="author"><span class="icon icon-user"></span> <?php the_author(); ?></div>
+                        <div class="date"><span class="icon icon-clock"></span> <?php the_date(); ?></div>
                     </footer>
-                 </a>
+                 </div>
             </article>
 
             <?php endwhile; else : ?>

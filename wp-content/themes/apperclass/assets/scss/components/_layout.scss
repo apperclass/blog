@@ -26,7 +26,7 @@ aside{
     display: block;
     background-color: white;
     box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     &.animated{
         transform: scale(1,1);
         transition-timing-function: ease-out;
@@ -35,6 +35,12 @@ aside{
     &.animated:hover{
         -webkit-transform: scale(1.03,1.03);
         -moz-transform: scale(1.03,1.03);
+    }
+}
+
+.blog-article{
+    .box{
+        margin: 0;
     }
 }
 
@@ -123,6 +129,12 @@ article{
         line-height: 22px;
         text-transform: uppercase;
         font-family: 'montserratbold', helvetica, sans-serif;
+        a{
+            color: $apper-blue-dark;
+            &:hover{
+                color: $apper-blue;
+            }
+        }
         margin: 0 0 5px 0;
     }
     h2 {
@@ -131,6 +143,12 @@ article{
         font-size: 13px;
         text-transform: uppercase;
         margin: 0 0 5px 0;
+        a{
+            color: $apper-acqua;
+            &:hover{
+                color: $apper-acqua-light;
+            }
+        }
     }
     p{
         color: $apper-blue-dark;
@@ -200,6 +218,12 @@ article{
         font-size: 15px;
         text-transform: uppercase;
         margin: 0 0 5px 0;
+        a{
+            color: $apper-acqua;
+            &:hover{
+                color: $apper-acqua-light;
+            }
+        }
     }
 }
 
@@ -256,4 +280,8 @@ article{
 .post-bottom{
     border-top: 1px solid #e6e6e6;
     padding: 15px 30px;
+}
+
+.comments-wrapper{
+    padding: 30px;
 }

@@ -3340,7 +3340,7 @@ aside > h1 {
   display: block;
   background-color: white;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 /* line 30, ../scss/components/_layout.scss */
 .box.animated {
@@ -3354,13 +3354,18 @@ aside > h1 {
   -moz-transform: scale(1.03, 1.03);
 }
 
-/* line 41, ../scss/components/_layout.scss */
+/* line 42, ../scss/components/_layout.scss */
+.blog-article .box {
+  margin: 0;
+}
+
+/* line 47, ../scss/components/_layout.scss */
 .main-header {
   background: #202531;
   height: 54px;
 }
 
-/* line 46, ../scss/components/_layout.scss */
+/* line 52, ../scss/components/_layout.scss */
 .blog-title-wrapper {
   height: 46px;
   float: left;
@@ -3368,20 +3373,20 @@ aside > h1 {
   padding: 0;
 }
 
-/* line 53, ../scss/components/_layout.scss */
+/* line 59, ../scss/components/_layout.scss */
 .blog-logo {
   display: block;
   float: left;
   height: 46px;
   padding-right: 10px;
 }
-/* line 58, ../scss/components/_layout.scss */
+/* line 64, ../scss/components/_layout.scss */
 .blog-logo img {
   height: 46px;
   display: block;
 }
 
-/* line 64, ../scss/components/_layout.scss */
+/* line 70, ../scss/components/_layout.scss */
 .blog-section-title {
   color: white;
   display: block;
@@ -3392,31 +3397,31 @@ aside > h1 {
   padding-left: 10px;
   border-left: 1px solid white;
 }
-/* line 73, ../scss/components/_layout.scss */
+/* line 79, ../scss/components/_layout.scss */
 .blog-section-title:hover {
   color: #30d2c9;
 }
 
-/* line 78, ../scss/components/_layout.scss */
+/* line 84, ../scss/components/_layout.scss */
 .search-form {
   float: right;
   margin: 4px 0;
   height: 46px;
 }
-/* line 83, ../scss/components/_layout.scss */
+/* line 89, ../scss/components/_layout.scss */
 .search-form .form-icon {
   display: inline-block;
   position: relative;
   left: 20px;
   z-index: 5;
 }
-/* line 89, ../scss/components/_layout.scss */
+/* line 95, ../scss/components/_layout.scss */
 .search-form .icon-search {
   color: white;
   font-size: 24px;
   line-height: 46px;
 }
-/* line 95, ../scss/components/_layout.scss */
+/* line 101, ../scss/components/_layout.scss */
 .search-form input {
   cursor: pointer;
   z-index: 15;
@@ -3434,13 +3439,13 @@ aside > h1 {
   background: transparent;
   border: 0px solid transparent;
 }
-/* line 111, ../scss/components/_layout.scss */
+/* line 117, ../scss/components/_layout.scss */
 .search-form input:focus {
   width: 200px;
   outline: none;
 }
 
-/* line 120, ../scss/components/_layout.scss */
+/* line 126, ../scss/components/_layout.scss */
 article h1 {
   color: #1d212c;
   font-size: 16px;
@@ -3449,7 +3454,15 @@ article h1 {
   font-family: 'montserratbold', helvetica, sans-serif;
   margin: 0 0 5px 0;
 }
-/* line 128, ../scss/components/_layout.scss */
+/* line 132, ../scss/components/_layout.scss */
+article h1 a {
+  color: #1d212c;
+}
+/* line 134, ../scss/components/_layout.scss */
+article h1 a:hover {
+  color: #202531;
+}
+/* line 140, ../scss/components/_layout.scss */
 article h2 {
   font-family: 'montserratregular', helvetica, sans-serif;
   color: #2bbbb3;
@@ -3457,7 +3470,15 @@ article h2 {
   text-transform: uppercase;
   margin: 0 0 5px 0;
 }
-/* line 135, ../scss/components/_layout.scss */
+/* line 146, ../scss/components/_layout.scss */
+article h2 a {
+  color: #2bbbb3;
+}
+/* line 148, ../scss/components/_layout.scss */
+article h2 a:hover {
+  color: #30d2c9;
+}
+/* line 153, ../scss/components/_layout.scss */
 article p {
   color: #1d212c;
   font-size: 14px;
@@ -3465,64 +3486,64 @@ article p {
   margin: 0;
   padding: 0;
 }
-/* line 142, ../scss/components/_layout.scss */
+/* line 160, ../scss/components/_layout.scss */
 article .article-body {
   padding: 10px;
 }
-/* line 145, ../scss/components/_layout.scss */
+/* line 163, ../scss/components/_layout.scss */
 article footer {
   padding: 10px;
 }
 
-/* line 150, ../scss/components/_layout.scss */
+/* line 168, ../scss/components/_layout.scss */
 .post-info {
   color: #8d9ba8;
   font-size: 12px;
 }
-/* line 153, ../scss/components/_layout.scss */
+/* line 171, ../scss/components/_layout.scss */
 .post-info .icon {
   color: #2bbbb3;
   padding-right: 5px;
 }
-/* line 157, ../scss/components/_layout.scss */
+/* line 175, ../scss/components/_layout.scss */
 .post-info a {
   color: #8d9ba8;
 }
-/* line 160, ../scss/components/_layout.scss */
+/* line 178, ../scss/components/_layout.scss */
 .post-info a:hover {
   color: #2bbbb3;
 }
 
-/* line 165, ../scss/components/_layout.scss */
+/* line 183, ../scss/components/_layout.scss */
 .post-index article {
   width: 250px;
   padding: 5px;
   z-index: 1;
 }
-/* line 169, ../scss/components/_layout.scss */
+/* line 187, ../scss/components/_layout.scss */
 .post-index article:hover {
   z-index: 1000;
 }
-/* line 172, ../scss/components/_layout.scss */
+/* line 190, ../scss/components/_layout.scss */
 .post-index article .wrap-picture {
   height: 165px;
   overflow: hidden;
 }
-/* line 175, ../scss/components/_layout.scss */
+/* line 193, ../scss/components/_layout.scss */
 .post-index article .wrap-picture img {
   display: block;
   width: 100%;
 }
-/* line 181, ../scss/components/_layout.scss */
+/* line 199, ../scss/components/_layout.scss */
 .post-index article footer {
   border-top: 1px solid #e6e6e6;
 }
 
-/* line 187, ../scss/components/_layout.scss */
+/* line 205, ../scss/components/_layout.scss */
 .post-detail {
   padding: 30px;
 }
-/* line 189, ../scss/components/_layout.scss */
+/* line 207, ../scss/components/_layout.scss */
 .post-detail h1 {
   color: #1d212c;
   font-size: 25px;
@@ -3531,7 +3552,7 @@ article footer {
   font-family: 'montserratbold', helvetica, sans-serif;
   margin: 0 0 5px 0;
 }
-/* line 197, ../scss/components/_layout.scss */
+/* line 215, ../scss/components/_layout.scss */
 .post-detail h2 {
   font-family: 'montserratregular', helvetica, sans-serif;
   color: #2bbbb3;
@@ -3539,13 +3560,21 @@ article footer {
   text-transform: uppercase;
   margin: 0 0 5px 0;
 }
+/* line 221, ../scss/components/_layout.scss */
+.post-detail h2 a {
+  color: #2bbbb3;
+}
+/* line 223, ../scss/components/_layout.scss */
+.post-detail h2 a:hover {
+  color: #30d2c9;
+}
 
-/* line 206, ../scss/components/_layout.scss */
+/* line 230, ../scss/components/_layout.scss */
 .author-box {
   position: relative;
   padding: 10px;
 }
-/* line 209, ../scss/components/_layout.scss */
+/* line 233, ../scss/components/_layout.scss */
 .author-box h1 {
   color: #1d212c;
   font-size: 16px;
@@ -3553,7 +3582,7 @@ article footer {
   font-family: 'montserratbold', helvetica, sans-serif;
   margin: 0;
 }
-/* line 216, ../scss/components/_layout.scss */
+/* line 240, ../scss/components/_layout.scss */
 .author-box h2 {
   font-family: 'montserratregular', helvetica, sans-serif;
   color: #2bbbb3;
@@ -3561,12 +3590,12 @@ article footer {
   margin: 0;
 }
 
-/* line 224, ../scss/components/_layout.scss */
+/* line 248, ../scss/components/_layout.scss */
 .author-details {
   margin-left: 40px;
 }
 
-/* line 228, ../scss/components/_layout.scss */
+/* line 252, ../scss/components/_layout.scss */
 .avatar {
   position: absolute;
   top: 3px;
@@ -3576,7 +3605,7 @@ article footer {
   z-index: 10;
   display: block;
 }
-/* line 236, ../scss/components/_layout.scss */
+/* line 260, ../scss/components/_layout.scss */
 .avatar img {
   position: absolute;
   display: block;
@@ -3585,22 +3614,27 @@ article footer {
   top: 0;
   left: 0;
 }
-/* line 243, ../scss/components/_layout.scss */
+/* line 267, ../scss/components/_layout.scss */
 .avatar img.picture {
   z-index: 10;
 }
-/* line 246, ../scss/components/_layout.scss */
+/* line 270, ../scss/components/_layout.scss */
 .avatar img.mask {
   z-index: 11;
 }
 
-/* line 252, ../scss/components/_layout.scss */
+/* line 276, ../scss/components/_layout.scss */
 .post-content {
   padding: 30px 0 0 0;
 }
 
-/* line 256, ../scss/components/_layout.scss */
+/* line 280, ../scss/components/_layout.scss */
 .post-bottom {
   border-top: 1px solid #e6e6e6;
   padding: 15px 30px;
+}
+
+/* line 285, ../scss/components/_layout.scss */
+.comments-wrapper {
+  padding: 30px;
 }
