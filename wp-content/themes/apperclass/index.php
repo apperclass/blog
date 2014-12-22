@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="main-content" class="main-content">
+<div id="main-content" class="main-content post-index">
 
     <div class="row">
         <div id="isotope-container">
@@ -15,7 +15,7 @@
                         <h1><?php the_title(); ?></h1>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula [...]</p>
                     </div>
-                    <footer>
+                    <footer class="post-info">
                         <div class="author"><span class="icon icon-user"></span> Matteo Orioli</div>
                         <div class="date"><span class="icon icon-clock"></span> December 27, 2014</div>
                     </footer>
