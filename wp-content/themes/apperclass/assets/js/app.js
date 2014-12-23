@@ -54,7 +54,7 @@
             updateSizes($('.isotope-item'));
             setTimeout(function(){
                 $('#isotope-container').data('isotope').layout();
-            },50);
+            },150);
         });
 
         $(window).trigger('resize');
