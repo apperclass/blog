@@ -2,6 +2,10 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div id="main-content" class="main-content post-single">
         <div class="row">
+            <div style="height: 14px"></div>
+        </div>
+
+        <div class="row">
             <div class="small-12 large-9 columns">
                 <div class="box">
                     <div class="post-detail">

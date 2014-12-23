@@ -2,7 +2,10 @@
     <div id="main-content" class="main-content">
 
         <div class="row">
-             <h1>404 - Not found</h1>
+
+            <div class="container-not-found">
+                <h1>Sorry we didn't find what are you looking for. </h1>
+            </div>
         </div>
 
 

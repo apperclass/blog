@@ -3429,6 +3429,11 @@ aside > h1 {
 }
 
 /* line 110, ../scss/components/_layout.scss */
+.index-wrapper {
+  padding-bottom: 30px;
+}
+
+/* line 114, ../scss/components/_layout.scss */
 .blog-section-title {
   color: white;
   display: block;
@@ -3439,31 +3444,42 @@ aside > h1 {
   padding-left: 10px;
   border-left: 1px solid white;
 }
-/* line 119, ../scss/components/_layout.scss */
+/* line 123, ../scss/components/_layout.scss */
 .blog-section-title:hover {
   color: #30d2c9;
 }
 
-/* line 124, ../scss/components/_layout.scss */
+/* line 128, ../scss/components/_layout.scss */
+#infinite-scrolling-loading {
+  text-align: center;
+  padding: 20px 0;
+}
+/* line 131, ../scss/components/_layout.scss */
+#infinite-scrolling-loading img, #infinite-scrolling-loading div {
+  text-align: center;
+}
+
+/* line 136, ../scss/components/_layout.scss */
 .search-form {
   float: right;
   margin: 4px 0;
   height: 46px;
+  overflow: hidden;
 }
-/* line 129, ../scss/components/_layout.scss */
+/* line 142, ../scss/components/_layout.scss */
 .search-form .form-icon {
   display: inline-block;
   position: relative;
   left: 20px;
   z-index: 5;
 }
-/* line 135, ../scss/components/_layout.scss */
+/* line 148, ../scss/components/_layout.scss */
 .search-form .icon-search {
   color: white;
   font-size: 24px;
   line-height: 46px;
 }
-/* line 141, ../scss/components/_layout.scss */
+/* line 154, ../scss/components/_layout.scss */
 .search-form input {
   cursor: pointer;
   z-index: 15;
@@ -3481,13 +3497,13 @@ aside > h1 {
   background: transparent;
   border: 0px solid transparent;
 }
-/* line 157, ../scss/components/_layout.scss */
+/* line 170, ../scss/components/_layout.scss */
 .search-form input:focus {
   width: 200px;
   outline: none;
 }
 
-/* line 166, ../scss/components/_layout.scss */
+/* line 179, ../scss/components/_layout.scss */
 article h1 {
   color: #1d212c;
   font-size: 16px;
@@ -3496,15 +3512,15 @@ article h1 {
   font-family: 'montserratbold', helvetica, sans-serif;
   margin: 0 0 5px 0;
 }
-/* line 172, ../scss/components/_layout.scss */
+/* line 185, ../scss/components/_layout.scss */
 article h1 a {
   color: #1d212c;
 }
-/* line 174, ../scss/components/_layout.scss */
+/* line 187, ../scss/components/_layout.scss */
 article h1 a:hover {
   color: #202531;
 }
-/* line 180, ../scss/components/_layout.scss */
+/* line 193, ../scss/components/_layout.scss */
 article h2 {
   font-family: 'montserratregular', helvetica, sans-serif;
   color: #2bbbb3;
@@ -3512,15 +3528,15 @@ article h2 {
   text-transform: uppercase;
   margin: 0 0 5px 0;
 }
-/* line 186, ../scss/components/_layout.scss */
+/* line 199, ../scss/components/_layout.scss */
 article h2 a {
   color: #2bbbb3;
 }
-/* line 188, ../scss/components/_layout.scss */
+/* line 201, ../scss/components/_layout.scss */
 article h2 a:hover {
   color: #30d2c9;
 }
-/* line 193, ../scss/components/_layout.scss */
+/* line 206, ../scss/components/_layout.scss */
 article p {
   color: #1d212c;
   font-size: 14px;
@@ -3528,65 +3544,64 @@ article p {
   margin: 0;
   padding: 0;
 }
-/* line 200, ../scss/components/_layout.scss */
+/* line 213, ../scss/components/_layout.scss */
 article .article-body {
   padding: 10px;
 }
-/* line 203, ../scss/components/_layout.scss */
+/* line 216, ../scss/components/_layout.scss */
 article footer {
   padding: 10px;
 }
 
-/* line 208, ../scss/components/_layout.scss */
+/* line 221, ../scss/components/_layout.scss */
 .post-info {
   color: #8d9ba8;
   font-size: 12px;
 }
-/* line 211, ../scss/components/_layout.scss */
+/* line 224, ../scss/components/_layout.scss */
 .post-info .icon {
   color: #2bbbb3;
   padding-right: 5px;
 }
-/* line 215, ../scss/components/_layout.scss */
+/* line 228, ../scss/components/_layout.scss */
 .post-info a {
   color: #8d9ba8;
 }
-/* line 218, ../scss/components/_layout.scss */
+/* line 231, ../scss/components/_layout.scss */
 .post-info a:hover {
   color: #2bbbb3;
 }
 
-/* line 223, ../scss/components/_layout.scss */
+/* line 236, ../scss/components/_layout.scss */
 .post-index article {
   width: 250px;
   padding: 5px;
   z-index: 1;
 }
-/* line 227, ../scss/components/_layout.scss */
+/* line 240, ../scss/components/_layout.scss */
 .post-index article:hover {
   z-index: 1000;
 }
-/* line 230, ../scss/components/_layout.scss */
+/* line 243, ../scss/components/_layout.scss */
 .post-index article .wrap-picture {
-  height: 165px;
   overflow: hidden;
 }
-/* line 233, ../scss/components/_layout.scss */
+/* line 245, ../scss/components/_layout.scss */
 .post-index article .wrap-picture img {
   display: block;
   width: 100%;
 }
-/* line 239, ../scss/components/_layout.scss */
+/* line 251, ../scss/components/_layout.scss */
 .post-index article footer {
   border-top: 1px solid #e6e6e6;
 }
 
-/* line 246, ../scss/components/_layout.scss */
+/* line 258, ../scss/components/_layout.scss */
 .author-box {
   position: relative;
   padding: 10px;
 }
-/* line 249, ../scss/components/_layout.scss */
+/* line 261, ../scss/components/_layout.scss */
 .author-box h1 {
   color: #1d212c;
   font-size: 16px;
@@ -3594,7 +3609,7 @@ article footer {
   font-family: 'montserratbold', helvetica, sans-serif;
   margin: 0;
 }
-/* line 256, ../scss/components/_layout.scss */
+/* line 268, ../scss/components/_layout.scss */
 .author-box h2 {
   font-family: 'montserratregular', helvetica, sans-serif;
   color: #2bbbb3;
@@ -3602,12 +3617,12 @@ article footer {
   margin: 0;
 }
 
-/* line 264, ../scss/components/_layout.scss */
+/* line 276, ../scss/components/_layout.scss */
 .author-details {
   margin-left: 40px;
 }
 
-/* line 268, ../scss/components/_layout.scss */
+/* line 280, ../scss/components/_layout.scss */
 .avatar {
   position: absolute;
   top: 3px;
@@ -3617,7 +3632,7 @@ article footer {
   z-index: 10;
   display: block;
 }
-/* line 276, ../scss/components/_layout.scss */
+/* line 288, ../scss/components/_layout.scss */
 .avatar img {
   position: absolute;
   display: block;
@@ -3626,13 +3641,24 @@ article footer {
   top: 0;
   left: 0;
 }
-/* line 283, ../scss/components/_layout.scss */
+/* line 295, ../scss/components/_layout.scss */
 .avatar img.picture {
   z-index: 10;
 }
-/* line 286, ../scss/components/_layout.scss */
+/* line 298, ../scss/components/_layout.scss */
 .avatar img.mask {
   z-index: 11;
+}
+
+/* line 304, ../scss/components/_layout.scss */
+.container-not-found {
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+/* line 308, ../scss/components/_layout.scss */
+.container-not-found h1 {
+  color: white;
 }
 
 /* line 2, ../scss/components/_single.scss */

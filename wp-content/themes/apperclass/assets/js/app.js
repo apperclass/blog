@@ -1,4 +1,14 @@
 (function($){
+
+    function getWidth(max, count, min){
+        if (count < 1) {
+            return max;
+        } else if ((max/count) > min ) {
+            return max/count;
+        }
+        return getWidth(max, count-1, min);
+    }
+
     $(document).ready(function(){
 
         // Isotope
@@ -13,10 +23,14 @@
             nextSelector : ".pagination .next",
             itemSelector : ".blog-article",
             loading: {
-                selector: '#infinite-scrolling-loading'
+                selector: '#infinite-scrolling-loading',
+                finishedMsg: '',
+                img: 'wp-content/themes/apperclass/assets/images/loader3.gif',
+                msgText: ''
             }
         },function(elements){
-            console.log(isotope);
+            var width = $('#isotope-container').width();
+            $(elements).css('width', getWidth(width, 5, 250) + 'px');
             isotope.isotope( 'appended', elements );
         });
 
@@ -26,6 +40,15 @@
             window.location = $(this).val();
         });
 
+        $(window).resize(function(){
+            var width = $('#isotope-container').width();
+            $('.isotope-item').css('width', getWidth(width, 5, 240) + 'px');
+            setTimeout(function(){
+                $('#isotope-container').data('isotope').layout();
+            },50);
+        });
+
+        $(window).trigger('resize');
     });
 })(jQuery);
 

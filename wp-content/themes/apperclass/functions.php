@@ -51,3 +51,13 @@ function get_avatar_url($get_avatar){
     preg_match("/src='(.*?)'/i", $get_avatar, $matches);
     return $matches[1];
 }
+
+/**
+ * Post thumbnail
+ */
+
+function custom_theme_setup() {
+    set_post_thumbnail_size( 600, 450, true );
+    add_theme_support( 'post-thumbnails');
+}
+add_action( 'after_setup_theme', 'custom_theme_setup' );

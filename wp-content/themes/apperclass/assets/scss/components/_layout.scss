@@ -107,6 +107,10 @@ aside{
     }
 }
 
+.index-wrapper{
+    padding-bottom: 30px;
+}
+
 .blog-section-title{
     color: white;
     display: block;
@@ -121,10 +125,19 @@ aside{
     }
 }
 
+#infinite-scrolling-loading{
+    text-align: center;
+    padding: 20px 0;
+    img, div{
+        text-align: center;
+    }
+}
+
 .search-form{
     float: right;
     margin: 4px 0;
     height: 46px;
+    overflow: hidden;
 
     .form-icon{
         display: inline-block;
@@ -228,7 +241,6 @@ article{
         z-index: 1000;
     }
     .wrap-picture{
-        height: 165px;
         overflow: hidden;
         img{
             display: block;
@@ -289,5 +301,12 @@ article{
     }
 }
 
-
+.container-not-found{
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    h1{
+        color: white;
+    }
+}
 
