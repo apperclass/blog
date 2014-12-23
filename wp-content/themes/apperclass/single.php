@@ -18,8 +18,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="box">
                     <div class="comments-wrapper">
                         <?php comments_template(); ?>
@@ -31,11 +29,11 @@
                     <div class="author-box">
                         <a href="" class="avatar">
                             <img class="mask" src="<?php echo get_template_directory_uri() . '/assets/images/hexagon-white-mask.png' ?>">
-                            <img class="picture" src="<?php echo get_template_directory_uri() . '/assets/images/alby.jpg' ?>">
+                            <img class="picture" src="<?php echo get_avatar_url(get_avatar($post->post_author)); ?>' ?>">
                         </a>
                         <div class="author-details">
                             <h1><?php the_author(); ?></h1>
-                            <h2>Published Articles: 12</h2>
+                            <h2>Published Articles: <?php echo count_user_posts( $post->post_author ); ?></h2>
                         </div>
                     </div>
                 </div>
@@ -50,18 +48,16 @@
                         /** @var \WP_Post $post */
                         foreach(wp_get_recent_posts($args, 'OBJECT') as $post): ?>
                         <article>
-                            <a href="">
                                 <div class="article-body">
                                     <h2><?php the_category( ', ', null, $post->ID ); ?></h2>
-                                    <h1><?php echo $post->post_title; ?></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula [...]</p>
-                                    <div class="post-info">
-                                        <div class="date"><span class="icon icon-clock"></span> <?php echo get_the_date(null, $post->ID); ?></div>
-                                    </div>
-
+                                    <a href="<?php echo get_permalink($post->ID); ?>">
+                                        <h1><?php echo $post->post_title; ?></h1>
+                                        <p><?php echo get_excerpt_by_post_content($post->post_content); ?></p>
+                                        <div class="post-info">
+                                            <div class="date"><span class="icon icon-clock"></span> <?php echo get_the_date(null, $post->ID); ?></div>
+                                        </div>
+                                    </a>
                                 </div>
-
-                            </a>
                         </article>
                         <?php endforeach;?>
                     </aside>

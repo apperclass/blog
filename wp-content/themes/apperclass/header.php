@@ -15,8 +15,12 @@
     <div class="main-header">
         <div class="row">
             <h1 class="blog-title-wrapper">
-                <a class="blog-logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-logo.png" alt="Apperclass Blog"></a>
-                <a class="blog-section-title" href="/">HTML5</a>
+                <a class="blog-logo" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-logo.png" alt="Apperclass Blog"></a>
+
+                <?php if(is_category()):?>
+                    <a class="blog-section-title" href="#"><?php single_cat_title(); ?></a>
+                <?php endif; ?>
+
                 <div class="clearfix"></div>
             </h1>
 

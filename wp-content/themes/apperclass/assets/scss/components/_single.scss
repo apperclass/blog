@@ -1,0 +1,55 @@
+
+.post-detail{
+    padding: 30px;
+    h1{
+        color: $apper-blue-dark;
+        font-size: 25px;
+        line-height: 27px;
+        text-transform: uppercase;
+        font-family: 'montserratbold', helvetica, sans-serif;
+        margin: 0 0 5px 0;
+    }
+    h2{
+        font-family: 'montserratregular', helvetica, sans-serif;
+        color: $apper-acqua;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 0 0 5px 0;
+        a{
+            color: $apper-acqua;
+            &:hover{
+                color: $apper-acqua-light;
+            }
+        }
+    }
+}
+
+.post-bottom{
+    border-top: 1px solid #e6e6e6;
+    padding: 15px 30px;
+}
+
+.comments-wrapper{
+    padding: 30px;
+}
+
+.post-content{
+    padding: 30px 0 0 0;
+
+    p{
+        margin: 0 0 14px 0;
+    }
+
+    a{
+        color: $apper-acqua;
+        &:hover{
+            color: $apper-acqua-light;
+        }
+    }
+
+    strong{
+        font-weight: normal;
+        font-family: 'montserratbold', helvetica, sans-serif;
+    }
+
+}

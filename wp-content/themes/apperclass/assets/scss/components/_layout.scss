@@ -12,6 +12,10 @@ a{
     clear: both;
 }
 
+.relative{
+    position: relative;
+}
+
 aside{
     &>h1{
         color: $apper-blue-dark;
@@ -36,6 +40,42 @@ aside{
         -webkit-transform: scale(1.03,1.03);
         -moz-transform: scale(1.03,1.03);
     }
+}
+
+.category-switch-component{
+    position: relative;
+    height: 30px;
+    margin: 10px 0;
+
+}
+
+.trigger-category-switch{
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+
+    z-index: 1;
+    right: 0;
+    top: 0;
+    height: 30px;
+    line-height: 30px;
+    span{
+        color: black;
+    }
+
+}
+
+.category-switch{
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 30px;
+    z-index: 10;
+    -webkit-appearance: menulist-button;
 }
 
 .blog-article{
@@ -202,30 +242,6 @@ article{
 
 }
 
-.post-detail{
-    padding: 30px;
-    h1{
-        color: $apper-blue-dark;
-        font-size: 25px;
-        line-height: 27px;
-        text-transform: uppercase;
-        font-family: 'montserratbold', helvetica, sans-serif;
-        margin: 0 0 5px 0;
-    }
-    h2{
-        font-family: 'montserratregular', helvetica, sans-serif;
-        color: $apper-acqua;
-        font-size: 15px;
-        text-transform: uppercase;
-        margin: 0 0 5px 0;
-        a{
-            color: $apper-acqua;
-            &:hover{
-                color: $apper-acqua-light;
-            }
-        }
-    }
-}
 
 .author-box{
     position: relative;
@@ -273,15 +289,5 @@ article{
     }
 }
 
-.post-content{
-    padding: 30px 0 0 0;
-}
 
-.post-bottom{
-    border-top: 1px solid #e6e6e6;
-    padding: 15px 30px;
-}
 
-.comments-wrapper{
-    padding: 30px;
-}
