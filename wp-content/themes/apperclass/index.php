@@ -17,7 +17,7 @@
                     </div>
                     <footer class="post-info">
                         <div class="author"><span class="icon icon-user"></span> <?php the_author(); ?></div>
-                        <div class="date"><span class="icon icon-clock"></span> <?php the_date(); ?></div>
+                        <div class="date"><span class="icon icon-clock"></span> <?php echo get_the_date(); ?></div>
                     </footer>
                  </div>
             </article>
