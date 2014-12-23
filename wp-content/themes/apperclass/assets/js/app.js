@@ -29,9 +29,11 @@
                 msgText: ''
             }
         },function(elements){
-            var width = $('#isotope-container').width();
-            $(elements).css('width', getWidth(width, 5, 250) + 'px');
-            isotope.isotope( 'appended', elements );
+            $(elements).imagesLoaded( function(){
+                var width = $('#isotope-container').width();
+                $(elements).css('width', getWidth(width, 5, 250) + 'px');
+                isotope.isotope( 'appended', elements );
+            });
         });
 
         // Switch category menu
