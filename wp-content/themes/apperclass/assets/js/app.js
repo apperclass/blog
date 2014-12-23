@@ -9,6 +9,17 @@
         return getWidth(max, count-1, min);
     }
 
+    function updateSizes($elements){
+        var width = $('#isotope-container').width();
+        var boxWidth =  getWidth(width, 5, 250);
+        $elements.css('width', boxWidth + 'px');
+        var imageWidth = boxWidth - 10 ;
+        var imageHeight = imageWidth * 0.75;
+        var $images = $elements.find('img');
+        $images.css('width', imageWidth  + 'px');
+        $images.css('height', imageHeight + 'px');
+    }
+
     $(document).ready(function(){
 
         // Isotope
@@ -29,11 +40,8 @@
                 msgText: ''
             }
         },function(elements){
-            $(elements).imagesLoaded( function(){
-                var width = $('#isotope-container').width();
-                $(elements).css('width', getWidth(width, 5, 250) + 'px');
-                isotope.isotope( 'appended', elements );
-            });
+            updateSizes($(elements));
+            isotope.isotope( 'appended', elements );
         });
 
         // Switch category menu
@@ -43,8 +51,7 @@
         });
 
         $(window).resize(function(){
-            var width = $('#isotope-container').width();
-            $('.isotope-item').css('width', getWidth(width, 5, 240) + 'px');
+            updateSizes($('.isotope-item'));
             setTimeout(function(){
                 $('#isotope-container').data('isotope').layout();
             },50);
