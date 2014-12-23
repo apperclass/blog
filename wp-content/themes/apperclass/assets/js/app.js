@@ -21,7 +21,7 @@
     }
 
     $(document).ready(function(){
-
+        $('#isotope-container').css('opacity',0);
         // Isotope
         var isotope = $('#isotope-container').isotope({
             itemSelector: '.isotope-item'
@@ -54,10 +54,14 @@
             updateSizes($('.isotope-item'));
             setTimeout(function(){
                 $('#isotope-container').data('isotope').layout();
-            },150);
+            },50);
         });
 
-        $(window).trigger('resize');
+        setTimeout(function(){
+            $(window).trigger('resize');
+            $('#isotope-container').css('opacity', 1);
+        }, 200);
+
     });
 })(jQuery);
 
