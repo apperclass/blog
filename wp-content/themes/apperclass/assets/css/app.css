@@ -3666,6 +3666,13 @@ article footer {
   color: white;
 }
 
+/* line 316, ../scss/components/_layout.scss */
+.crayon-syntax {
+  border-radius: 9px;
+  padding: 10px;
+  border: 0px !important;
+}
+
 /* line 2, ../scss/components/_single.scss */
 .post-detail {
   padding: 30px;
