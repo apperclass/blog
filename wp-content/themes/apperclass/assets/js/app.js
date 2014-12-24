@@ -21,6 +21,11 @@
     }
 
     $(document).ready(function(){
+
+        if ($('#isotope-container').length < 1) {
+            return;
+        }
+
         $('#isotope-container').css('opacity',0);
 
         // Isotope

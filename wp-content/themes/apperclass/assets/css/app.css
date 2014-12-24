@@ -3344,7 +3344,7 @@ aside > h1 {
 .box {
   display: block;
   background-color: white;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 14px;
 }
 /* line 34, ../scss/components/_layout.scss */
@@ -3435,6 +3435,7 @@ aside > h1 {
 
 /* line 114, ../scss/components/_layout.scss */
 .blog-section-title {
+  font-family: 'montserratregular';
   color: white;
   display: block;
   float: left;
@@ -3444,42 +3445,42 @@ aside > h1 {
   padding-left: 10px;
   border-left: 1px solid white;
 }
-/* line 123, ../scss/components/_layout.scss */
+/* line 124, ../scss/components/_layout.scss */
 .blog-section-title:hover {
   color: #30d2c9;
 }
 
-/* line 128, ../scss/components/_layout.scss */
+/* line 129, ../scss/components/_layout.scss */
 #infinite-scrolling-loading {
   text-align: center;
   padding: 20px 0;
 }
-/* line 131, ../scss/components/_layout.scss */
+/* line 132, ../scss/components/_layout.scss */
 #infinite-scrolling-loading img, #infinite-scrolling-loading div {
   text-align: center;
 }
 
-/* line 136, ../scss/components/_layout.scss */
+/* line 137, ../scss/components/_layout.scss */
 .search-form {
   float: right;
   margin: 4px 0;
   height: 46px;
   overflow: hidden;
 }
-/* line 142, ../scss/components/_layout.scss */
+/* line 143, ../scss/components/_layout.scss */
 .search-form .form-icon {
   display: inline-block;
   position: relative;
   left: 20px;
   z-index: 5;
 }
-/* line 148, ../scss/components/_layout.scss */
+/* line 149, ../scss/components/_layout.scss */
 .search-form .icon-search {
   color: white;
   font-size: 24px;
   line-height: 46px;
 }
-/* line 154, ../scss/components/_layout.scss */
+/* line 155, ../scss/components/_layout.scss */
 .search-form input {
   cursor: pointer;
   z-index: 15;
@@ -3497,13 +3498,13 @@ aside > h1 {
   background: transparent;
   border: 0px solid transparent;
 }
-/* line 170, ../scss/components/_layout.scss */
+/* line 171, ../scss/components/_layout.scss */
 .search-form input:focus {
   width: 200px;
   outline: none;
 }
 
-/* line 179, ../scss/components/_layout.scss */
+/* line 180, ../scss/components/_layout.scss */
 article h1 {
   color: #1d212c;
   font-size: 16px;
@@ -3512,15 +3513,15 @@ article h1 {
   font-family: 'montserratbold', helvetica, sans-serif;
   margin: 0 0 5px 0;
 }
-/* line 185, ../scss/components/_layout.scss */
+/* line 186, ../scss/components/_layout.scss */
 article h1 a {
   color: #1d212c;
 }
-/* line 187, ../scss/components/_layout.scss */
+/* line 188, ../scss/components/_layout.scss */
 article h1 a:hover {
   color: #202531;
 }
-/* line 193, ../scss/components/_layout.scss */
+/* line 194, ../scss/components/_layout.scss */
 article h2 {
   font-family: 'montserratregular', helvetica, sans-serif;
   color: #2bbbb3;
@@ -3528,15 +3529,15 @@ article h2 {
   text-transform: uppercase;
   margin: 0 0 5px 0;
 }
-/* line 199, ../scss/components/_layout.scss */
+/* line 200, ../scss/components/_layout.scss */
 article h2 a {
   color: #2bbbb3;
 }
-/* line 201, ../scss/components/_layout.scss */
+/* line 202, ../scss/components/_layout.scss */
 article h2 a:hover {
   color: #30d2c9;
 }
-/* line 206, ../scss/components/_layout.scss */
+/* line 207, ../scss/components/_layout.scss */
 article p {
   color: #1d212c;
   font-size: 14px;
@@ -3544,69 +3545,69 @@ article p {
   margin: 0;
   padding: 0;
 }
-/* line 213, ../scss/components/_layout.scss */
+/* line 214, ../scss/components/_layout.scss */
 article .article-body {
   padding: 10px;
 }
-/* line 216, ../scss/components/_layout.scss */
+/* line 217, ../scss/components/_layout.scss */
 article footer {
   padding: 10px;
 }
 
-/* line 221, ../scss/components/_layout.scss */
+/* line 222, ../scss/components/_layout.scss */
 .post-info {
   color: #8d9ba8;
   font-size: 12px;
 }
-/* line 224, ../scss/components/_layout.scss */
+/* line 225, ../scss/components/_layout.scss */
 .post-info .icon {
   color: #2bbbb3;
   padding-right: 5px;
 }
-/* line 228, ../scss/components/_layout.scss */
+/* line 229, ../scss/components/_layout.scss */
 .post-info a {
   color: #8d9ba8;
 }
-/* line 231, ../scss/components/_layout.scss */
+/* line 232, ../scss/components/_layout.scss */
 .post-info a:hover {
   color: #2bbbb3;
 }
 
-/* line 236, ../scss/components/_layout.scss */
+/* line 237, ../scss/components/_layout.scss */
 .post-index article {
   width: 250px;
   padding: 5px;
   z-index: 1;
 }
-/* line 240, ../scss/components/_layout.scss */
+/* line 241, ../scss/components/_layout.scss */
 .post-index article:hover {
   z-index: 1000;
 }
-/* line 243, ../scss/components/_layout.scss */
+/* line 244, ../scss/components/_layout.scss */
 .post-index article .wrap-picture {
   overflow: hidden;
 }
-/* line 245, ../scss/components/_layout.scss */
+/* line 246, ../scss/components/_layout.scss */
 .post-index article .wrap-picture img {
   display: block;
   width: 100%;
 }
-/* line 251, ../scss/components/_layout.scss */
+/* line 252, ../scss/components/_layout.scss */
 .post-index article footer {
   border-top: 1px solid #e6e6e6;
 }
 
-/* line 257, ../scss/components/_layout.scss */
+/* line 258, ../scss/components/_layout.scss */
 #isotope-container {
   opacity: 0;
 }
 
-/* line 261, ../scss/components/_layout.scss */
+/* line 262, ../scss/components/_layout.scss */
 .author-box {
   position: relative;
   padding: 10px;
 }
-/* line 264, ../scss/components/_layout.scss */
+/* line 265, ../scss/components/_layout.scss */
 .author-box h1 {
   color: #1d212c;
   font-size: 16px;
@@ -3614,7 +3615,7 @@ article footer {
   font-family: 'montserratbold', helvetica, sans-serif;
   margin: 0;
 }
-/* line 271, ../scss/components/_layout.scss */
+/* line 272, ../scss/components/_layout.scss */
 .author-box h2 {
   font-family: 'montserratregular', helvetica, sans-serif;
   color: #2bbbb3;
@@ -3622,12 +3623,18 @@ article footer {
   margin: 0;
 }
 
-/* line 279, ../scss/components/_layout.scss */
+/* line 280, ../scss/components/_layout.scss */
+.bottom-rounded {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* line 285, ../scss/components/_layout.scss */
 .author-details {
   margin-left: 40px;
 }
 
-/* line 283, ../scss/components/_layout.scss */
+/* line 289, ../scss/components/_layout.scss */
 .avatar {
   position: absolute;
   top: 3px;
@@ -3637,7 +3644,7 @@ article footer {
   z-index: 10;
   display: block;
 }
-/* line 291, ../scss/components/_layout.scss */
+/* line 297, ../scss/components/_layout.scss */
 .avatar img {
   position: absolute;
   display: block;
@@ -3646,27 +3653,27 @@ article footer {
   top: 0;
   left: 0;
 }
-/* line 298, ../scss/components/_layout.scss */
+/* line 304, ../scss/components/_layout.scss */
 .avatar img.picture {
   z-index: 10;
 }
-/* line 301, ../scss/components/_layout.scss */
+/* line 307, ../scss/components/_layout.scss */
 .avatar img.mask {
   z-index: 11;
 }
 
-/* line 307, ../scss/components/_layout.scss */
+/* line 313, ../scss/components/_layout.scss */
 .container-not-found {
   color: white;
   text-align: center;
   padding: 30px 0;
 }
-/* line 311, ../scss/components/_layout.scss */
+/* line 317, ../scss/components/_layout.scss */
 .container-not-found h1 {
   color: white;
 }
 
-/* line 316, ../scss/components/_layout.scss */
+/* line 322, ../scss/components/_layout.scss */
 .crayon-syntax {
   border-radius: 9px;
   padding: 10px;

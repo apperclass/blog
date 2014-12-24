@@ -14,6 +14,7 @@ function apperclass_theme_scripts() {
     wp_enqueue_script( 'isotope', get_template_directory_uri() . '/assets/vendor/isotope/dist/isotope.pkgd.min.js', array('jquery'), '1.0.0' );
     wp_enqueue_script( 'infinite-scroll', get_template_directory_uri() . '/assets/vendor/infinite-scroll/jquery.infinitescroll.min.js', array('jquery'), '1.0.0' );
     wp_enqueue_script( 'images-loaded', get_template_directory_uri() . '/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js', array('jquery', 'isotope'), '1.0.0' );
+    wp_enqueue_script('disqus_count','http://apperclass.disqus.com/count.js');
 }
 
 add_action( 'wp_enqueue_scripts', 'apperclass_theme_scripts' );
@@ -62,3 +63,10 @@ function custom_theme_setup() {
     add_theme_support( 'post-thumbnails');
 }
 add_action( 'after_setup_theme', 'custom_theme_setup' );
+
+/**
+ * Disqus Count
+ */
+function the_disqus_count($post) {
+    echo '<a data-disqus-identifier="'.dsq_identifier_for_post($post).'" href="'. get_permalink() .'#disqus_thread">0</a>';
+}

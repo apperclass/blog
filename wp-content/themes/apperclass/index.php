@@ -29,7 +29,7 @@
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <article class="blog-article isotope-item">
-                    <div class="box animated">
+                    <div class="box animated bottom-rounded">
                         <div class="wrap-picture">
                             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                         </div>
@@ -41,8 +41,16 @@
                             </a>
                         </div>
                         <footer class="post-info">
+
                             <div class="author"><span class="icon icon-user"></span> <?php the_author(); ?></div>
-                            <div class="date"><span class="icon icon-clock"></span> <?php echo get_the_date(); ?></div>
+                            <div class="row">
+                                <div class="columns small-8">
+                                    <div class="date"><span class="icon icon-clock"></span> <?php echo get_the_date(); ?></div>
+                                </div>
+                                <div class="columns small-4" style="text-align: right;">
+                                    <div class="comment-count"><span class="icon icon-bubble"></span> <?php the_disqus_count($post); ?></div>
+                                </div>
+                            </div>
                         </footer>
                      </div>
                 </article>

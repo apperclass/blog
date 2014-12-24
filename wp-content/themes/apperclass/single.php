@@ -12,7 +12,10 @@
                         <h2><?php the_category( ', ' ); ?></h2>
                         <h1><?php the_title(); ?></h1>
                         <div class="post-info">
-                            <div class="date"><span class="icon icon-clock"></span> <?php the_date(); ?></div>
+                            <div class="date">
+                                <span class="icon icon-clock"></span> <?php the_date(); ?>
+                                <span style="padding-left: 10px;" class="icon icon-bubble"></span> <?php the_disqus_count($post); ?>
+                            </div>
                         </div>
                         <div class="post-content"><?php the_content(); ?></div>
                     </div>

@@ -29,7 +29,7 @@ aside{
 .box{
     display: block;
     background-color: white;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
     margin-bottom: 14px;
     &.animated{
         transform: scale(1,1);
@@ -112,6 +112,7 @@ aside{
 }
 
 .blog-section-title{
+    font-family: 'montserratregular';
     color: white;
     display: block;
     float: left;
@@ -274,6 +275,11 @@ article{
         font-size: 13px;
         margin: 0;
     }
+}
+
+.bottom-rounded{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .author-details{
