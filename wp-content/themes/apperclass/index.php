@@ -5,8 +5,8 @@
         <div class="columns small-12 large-8"></div>
         <div class="columns small-12 large-4">
             <div class="category-switch-component">
-                <div class="trigger-category-switch"><span>Show: </span> <?php $cat = single_cat_title('', false); echo $cat ? $cat : 'All'; ?></div>
-                <select class="category-switch">
+                <div class="trigger-category-switch"><span class="show">Show: </span> <?php $cat = single_cat_title('', false); echo $cat ? $cat : 'All'; ?> <img class="arrow-up" src="<?php echo get_template_directory_uri(); ?>/assets/images/caret-white.png"><img class="arrow-down" src="<?php echo get_template_directory_uri(); ?>/assets/images/caret-white-down.png"></div>
+                <!--<select class="category-switch">
                     <option value="<?php echo get_home_url(); ?>">All</option>
 
                     <?php
@@ -15,9 +15,9 @@
                         ?>
                         <option <?php if(strtolower(single_cat_title('',false))===strtolower($category->name)){ echo "selected"; } ?> value="<?php echo get_category_link( $category->cat_ID ); ?>"><?php echo $category->name; ?></option>
                     <?php endforeach; ?>
-                </select>
+                </select>-->
                 <div class="category-list-menu">
-                    <?php wp_list_categories(); ?>
+                    <ul><?php wp_list_categories('title_li='); ?></ul>
                 </div>
             </div>
         </div>

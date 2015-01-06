@@ -1,3 +1,12 @@
+<?php
+$s = '';
+$searchIsOpen = false;
+if(isset($_GET['s'])){
+    $s = $_GET['s'];
+    $searchIsOpen = true;
+};
+
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -12,7 +21,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('apperclass-gradient'); ?>>
-
+    <div id="category-overlay"></div>
     <div class="main-header">
         <div class="row">
             <h1 class="blog-title-wrapper">
@@ -26,7 +35,7 @@
             </h1>
 
                 <form class="search-form">
-                    <span class="form-icon"><span class="icon-search"></span></span><input name="s" type="search">
+                    <span class="form-icon"><span class="icon-search"></span></span><input class="<?php if($searchIsOpen){ echo "focused"; }?>" name="s" type="search" value="<?php echo $s; ?>" >
                 </form>
                 <div class="clearfix"></div>
         </div>

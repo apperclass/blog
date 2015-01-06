@@ -2,7 +2,11 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div id="main-content" class="main-content post-single">
         <div class="row">
-            <div style="height: 14px"></div>
+            <div style="height: 60px">
+
+                <a class="back-to-posts" href="<?php echo get_home_url(); ?>">&lt; Back to the posts</a>
+
+            </div>
         </div>
 
         <div class="row">
@@ -34,9 +38,9 @@
             <div class="small-12 large-3 columns">
                 <div class="box">
                     <div class="author-box">
-                        <a href="" class="avatar">
+                        <a target="_blank" href="<?php the_author_meta( 'user_url'); ?>" class="avatar">
                             <img class="mask" src="<?php echo get_template_directory_uri() . '/assets/images/hexagon-white-mask.png' ?>">
-                            <img class="picture" src="<?php echo get_avatar_url(get_avatar($post->post_author)); ?>' ?>">
+                            <img class="picture" src="<?php echo get_avatar_url( get_avatar( get_the_author_meta( 'ID' ))); ?>">
                         </a>
                         <div class="author-details">
                             <h1><?php the_author(); ?></h1>
