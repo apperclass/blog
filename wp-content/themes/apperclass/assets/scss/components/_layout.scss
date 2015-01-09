@@ -6,6 +6,7 @@ body {
 
 a{
     text-decoration: none;
+    outline: none;
 }
 
 .clearfix{
@@ -203,9 +204,36 @@ aside{
     margin: 6px 0;
     padding-left: 10px;
     border-left: 1px solid white;
-    &:hover{
+    &:hover, &:focus{
         color: $apper-acqua-light;
     }
+}
+
+.blog-section-category-title{
+    font-family: 'montserratlight';
+    color: white;
+    display: block;
+    float: left;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 6px 0;
+    padding-left: 10px;
+    text-transform: uppercase;
+    &:hover, &:focus{
+        color: $apper-acqua-light;
+    }
+}
+
+.blog-section-separator{
+    font-family: 'montserratlight';
+    color: white;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 34px;
+    margin: 6px 0;
+    padding-left: 10px;
+    text-transform: uppercase;
 }
 
 #infinite-scrolling-loading{
